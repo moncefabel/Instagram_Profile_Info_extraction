@@ -39,3 +39,13 @@ def main(username):
             'profile': {}
         }
     return instagram_profile
+#  python InstgramProfile.py username
+if __name__ == "__main__":
+    '''driver code'''
+
+    if len(sys.argv) == 2:
+        output = main(sys.argv[-1])
+        print(output)
+    else:
+        print('=========>Invalid paramaters Valid Command is<=========== \
+        \npython InstagramProfile.py username')
